@@ -47,7 +47,7 @@ feeding detected part of image to model for edge detection.
 
     * For vertical vanishing point :Regression method is used to fit line then itersection point is calculated
     
-    * For horizontal Vanishing Point :Using combination of 2 lines intersection is calculated for each then its median value is considered as vanishing point.
+    * For horizontal Vanishing Point :Using combination of 2 lines intersection is calculated for each, then its median value is considered as vanishing point.
     
 RESULTS OF CORNER DETECTION:
 
