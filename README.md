@@ -1,4 +1,4 @@
-# StairPose Estimation
+# Stair Pose Estimation
 
 Designed an algorithm to estimate pose of stair with respect to camera of robot using Deep Learning and Computer Vision techniques
 
