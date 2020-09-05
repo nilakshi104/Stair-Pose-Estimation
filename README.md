@@ -53,6 +53,6 @@ RESULTS OF CORNER DETECTION:
 
 In first image broken lines are shown besides it image with joined lines and corners detected (in green),in second image left and right corners are highlighted with different colours(in red and blue)
 
-<img src="Images/Corners/index3.png" width="600" height="400"/>   <img src="Images/Corners/index2.png" width="400" height="360"/>
+<img src="Images/Corners/index3.png" width="600" height="400"/>   <img src="Images/Corners/index2.png" width="300" height="400"/>
 
 These vanishing points are then use to calculate Pose of Stair with respect to Camera Of Robot
