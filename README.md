@@ -29,11 +29,12 @@ Stair Edge is highlighted in cyan colour in follwing test set images:
 <img src="Images/Worst/1476.png" width="400"/> <img src="Images/Worst/1584.png" width="400"/>
 <img src="Images/Worst/1478.png" width="400"/> <img src="Images/Worst/1481.png" width="400"/>
 
-* In some images edges different from stair edges are detected are detected Example of such Image is as below:
+* In some images edges different from stair edges are detected Example of such Image is as below:
 
 <img src="Images/Worst/1477.png" width="400"/> 
 
-This issue can be solved by firstly localizing stair in image using YOLO(or any other algorithm as YOLO is heavy and might cause lag when video is fed) then running above model on detected part of image.
+This issue can be solved by firstly localizing stair in image using YOLO(or any other algorithm as YOLO is heavy and might cause lag when video is fed) then 
+feeding detected part of image to model for edge detection.
 
 ## 2.StairPose Code:
 1.Using cv2.connectedComponentsWithStats Noise is removed from image
