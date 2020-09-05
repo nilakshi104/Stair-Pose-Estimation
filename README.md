@@ -8,11 +8,11 @@ Designed an algorithm to estimate pose of stair with respect to camera of robot 
 
    * Used Resnet34 pretrained model for segmentation of stair edges using FastAI
    
-   * Calculated Vertical and Horizontal vanishing points to calculate translational and rotational values which are           
+   * Used Vertical and Horizontal vanishing points to furthur calculate translational and rotational values which are           
      later used to estimate pose of stair w.r.t camera of robot
      
    * If camera gets translated and rotated by calculated value, stairedges would appear parallel to camera and it 
-     it becomes easy for robot to climb stair.
+     becomes easy for robot to climb stair.
 
 #### Results:
 Stair Edge is highlighted in cyan colour in follwing test set images:
