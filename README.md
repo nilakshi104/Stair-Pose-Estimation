@@ -1,5 +1,7 @@
 # Stair Pose Estimation
 
+[DEMO VIDEO](https://drive.google.com/file/d/1dPF2OP07s0LW6-wLI2noRfTZ8BC8ct1r/view?usp=drivesdk)
+
 Designed an algorithm to estimate pose of stair with respect to camera of robot using Deep Learning and Computer Vision techniques
 
 #### Repo Contains:
