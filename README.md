@@ -2,6 +2,8 @@
 
 [DEMO VIDEO](https://drive.google.com/file/d/1dPF2OP07s0LW6-wLI2noRfTZ8BC8ct1r/view?usp=drivesdk)
 
+[RESEARCH PAPER](https://drive.google.com/file/d/1dkICxPhttYv9eMlcAFcu43WNYdF3IjJi/view?usp=drivesdk) : PCEMS 2022
+
 Designed an algorithm to estimate pose of stair with respect to camera of robot using Deep Learning and Computer Vision techniques
 
 #### Repo Contains:
