@@ -69,6 +69,9 @@ To deploy model, heroku platform can be used. In this case due to slug size limi
   - stair.txt (Includes all class names)
   - requirements.txt 
   - readme.txt (Include instructions to recreate result on your system. Read all instructions carefully.)
+- images
+
+  - output images
 
 ### Results:
 
