@@ -42,17 +42,40 @@ When the robot is located on the left side of the staircase as shown in Fig. 7(a
 
 3) DEPLOYING MODEL ONLINE:
 
-Using Streamlit framework, web application is created and is deployed using Heroku. See Demo Video in results section.
+Using Streamlit framework, web application is created. See Demo Video in results section.
+
+To deploy model, heroku platform can be used. In this case due to slug size limit of 500mb, model has to be stored in cloud (like using AWS) and acessed using api request (using flask). 
 
 ### File Structure
 
-|
-
-
+||
+- training 
+  ||
+  - Resnet34/Training.ipynb
+  - Yolov5/Finetuning YOLOv5.ipynb
+  - Yolov5/Saving cropped stair region.ipynb
+- testing
+  ||
+  - Comparison_of_all_3_models.ipynb ( Approach 3b is to be considered, for other approaches refer research paper)
+  - Testing_Complete_Pipeline.ipynb (for both video and image input)
+- web application
+  ||
+  - app/app.py
+  - app/stairpose.py
+  - app/predict_mask.py
+  - models/best3.pt (Trained YOLOv5 weights)
+  - models/w1.pth   (Trained Resnet34 weights)
+  - train, train_masks, val, val_masks
+  - .png images: 995,1001,1002,1477,front,left,right (Testing images. Used in left sidebar of web app)
+  - stair.txt (Includes all class names)
+  - requirements.txt 
+  - readme.txt (Include instructions to recreate result on your system. Read all instructions carefully.)
 
 ### Results:
 
 [RESEARCH PAPER](https://drive.google.com/file/d/1dkICxPhttYv9eMlcAFcu43WNYdF3IjJi/view?usp=drivesdk)  
 This paper was presented in 1st International Conference on the Paradigm shifts in Communication, Embedded Systems,, Machine Learning and Signal Processing [PCEMS] 2022.
 
-[DEMO VIDEO](https://drive.google.com/file/d/1dPF2OP07s0LW6-wLI2noRfTZ8BC8ct1r/view?usp=drivesdk)
+[Testing algorithm on video input](https://drive.google.com/file/d/1Z37BnEsa8wNj3Tnn3V4Codw2Mxx0Hu7v/view?usp=sharing)
+
+[Testing web application](https://drive.google.com/file/d/1dPF2OP07s0LW6-wLI2noRfTZ8BC8ct1r/view?usp=drivesdk)
