@@ -48,18 +48,17 @@ To deploy model, heroku platform can be used. In this case due to slug size limi
 
 ### File Structure
 
-||
 - training 
-  ||
+  
   - Resnet34/Training.ipynb
   - Yolov5/Finetuning YOLOv5.ipynb
   - Yolov5/Saving cropped stair region.ipynb
 - testing
-  ||
-  - Comparison_of_all_3_models.ipynb ( Approach 3b is to be considered, for other approaches refer research paper)
+
+  - Comparison_of_all_3_models.ipynb ( Approach 3b is to be considered, for other approaches refer [research paper](https://drive.google.com/file/d/1dkICxPhttYv9eMlcAFcu43WNYdF3IjJi/view?usp=drivesdk) )
   - Testing_Complete_Pipeline.ipynb (for both video and image input)
 - web application
-  ||
+
   - app/app.py
   - app/stairpose.py
   - app/predict_mask.py
