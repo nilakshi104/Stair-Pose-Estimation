@@ -1,0 +1,13 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+
+click==8.0.4
+matplotlib==3.3.4
+opencv-python==4.5.5.64
+Pillow==8.4.0
+seaborn == 0.11.2
+streamlit==1.7.0
+torch==1.8.1+cpu
+torchvision==0.9.1+cpu
+fastai == 1.0.61
+tqdm == 4.63.1
+sklearn ==0.0
