@@ -61,7 +61,7 @@ To deploy model, heroku platform can be used. In this case due to slug size limi
 
   - app/app.py
   - app/stairpose.py
-  - app/predict_mask.py
+  - app/aws_app.py
   - models/best3.pt (Trained YOLOv5 weights)
   - models/w1.pth   (Trained Resnet34 weights)
   - train, train_masks, val, val_masks
