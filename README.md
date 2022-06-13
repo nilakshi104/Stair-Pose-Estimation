@@ -9,7 +9,9 @@ Designed an algorithm to estimate pose of stair with respect to camera of robot 
 Stair region is cropped from the original image and padded with zero symmetrically along all four sides to increase the image size to 3 x 320 x 240. 
 Semantic segmentation is then performed on this padded image to obtain a segmentation mask. Then this segmentation mask is mapped to stair region in black image. Black image is binary image (320 x 240) with pixel intensity zero. 
 
-<img src="Images/rp_fig1.png" /> 
+<p align="center">
+<img src="Images/rp_fig1.png" width=650/> 
+</p>
 
 2) STAIR POSE ESTIMATION:
 
@@ -34,11 +36,15 @@ Ideal case is when the robot reaches midpoint of first step and then rotates by 
 desired direction and the robot is ready to climb the stairs safely. When aligned with staircase, stair edges seem to be parallel from point of view of robot.
 as shown in above Figure 6. 
 
-<img src="Images/rp_fig2.png"/> 
+<p align="center">
+<img src="Images/rp_fig2.png" height="300" width="400"/> 
+</p>
 
 When the robot is located on the left side of the staircase as shown in Fig. 7(a-d), stair edges seem to intersect on the right side. Hence after reaching the midpoint of first step, it needs to rotate anticlockwise until stair edges will be parallel i.e. robot attains headon position. On the other hand if robot is located on the right side of staircase as shown in Fig. 7(e-h), stair edges seem to intersect on the left side and after reaching midpoint of first step, it needs to rotate clockwise until stair edges will be parallel. After each clockwise or anticlockwise rotation it is checked if coordinates of horizontal vanishing point exceeds the threshold value. If the horizontal vanishing point value is greater than the threshold defined, robot heads in the desired direction and is ready to climb the staircase.
 
-<img src="Images/rp_fig3.png"/> 
+<p align="center">
+<img src="Images/rp_fig3.png" width="650"/> 
+</p>
 
 3) DEPLOYING MODEL ONLINE:
 
